@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "579029394823",
+    "project_id": "truck-driver-location-tracker",
+    "storage_bucket": "truck-driver-location-tracker.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:579029394823:android:5c499b553943c9929a1f22",
+        "android_client_info": {
+          "package_name": "com.example.truckdriverlocationtracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "579029394823-3tvsstf0r78i9iikpjd6p6a4fsoklkbu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.truckdriverlocationtracker",
+            "certificate_hash": "cdd47cad187ae96e74463306c37e44c6235e4617"
+          }
+        },
+        {
+          "client_id": "579029394823-lsmrqlgcgvtcmf230mvual5imrtfh1k4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCib-td2dHvs3ZsBzUQgd5F8cLMiqdw9pE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "579029394823-lsmrqlgcgvtcmf230mvual5imrtfh1k4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

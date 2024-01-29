@@ -1,0 +1,52 @@
+{
+  "rooms": [
+    {
+      "id": 1,
+      "room_num": "room 1",
+      "status_room": 1,
+      "double_single": "single",
+      "hotel_branch": "branch1",
+      "price": 100
+    },
+    {
+      "id": 2,
+      "room_num": "room 2",
+      "status_room": 0,
+      "double_single": "double",
+      "hotel_branch": "branch1",
+      "price": 100
+    },
+    {
+      "id": 3,
+      "room_num": "room 3",
+      "status_room": 1,
+      "double_single": "double",
+      "hotel_branch": "branch2",
+      "price": 100
+    },
+    {
+      "id": 4,
+      "room_num": "room 4",
+      "status_room": 0,
+      "double_single": "single",
+      "hotel_branch": "branch2",
+      "price": 100
+    },
+    {
+      "id": 5,
+      "room_num": "room 5",
+      "status_room": 0,
+      "double_single": "single",
+      "hotel_branch": "branch1",
+      "price": 100
+    },
+    {
+      "id": 6,
+      "room_num": "room 6",
+      "status_room": 0,
+      "double_single": "double",
+      "hotel_branch": "branch2",
+      "price": 100
+    }
+  ]
+}

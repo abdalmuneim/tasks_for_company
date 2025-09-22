@@ -1,0 +1,71 @@
+name: minisocialfeedapp
+description: "A Flutter social media app with Firebase integration, Google Ads, and REST API."
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI & Icons
+  cupertino_icons: ^1.0.8
+
+  # Firebase
+  firebase_core: ^4.1.0
+  firebase_auth: ^6.0.2
+  cloud_firestore: ^6.0.1
+
+  # Google Sign In
+  google_sign_in: ^6.3.0
+
+  # Google Mobile Ads
+  google_mobile_ads: ^6.0.0
+
+  # HTTP & API
+  http: ^1.5.0
+
+  # State Management
+  provider: ^6.1.5+1
+
+  # Image handling
+  cached_network_image: ^3.4.1
+
+  # Form validation
+  email_validator: ^3.0.0
+
+  # Shared Preferences for theme
+  shared_preferences: ^2.5.3
+
+  # UUID for generating IDs
+  uuid: ^4.5.1
+
+  # Formatting
+  intl: ^0.20.2
+
+  # Shimmer effect
+  shimmer: ^3.0.0
+  google_fonts: ^6.3.1
+  flutter_svg: ^2.2.1
+
+  # Share functionality
+  share_plus: ^12.0.0
+  path_provider: ^2.1.5
+  html: ^0.15.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  change_app_package_name: ^1.5.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/icons/

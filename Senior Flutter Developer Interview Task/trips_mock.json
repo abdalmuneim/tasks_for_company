@@ -1,0 +1,195 @@
+  {
+    "trips": [
+      {
+        "id": "1",
+        "status": "Proposal Sent",
+        "title": "Banff National Park Adventure",
+        "dates": {
+          "start": "16-01-2024",
+          "end": "20-01-2024"
+        },
+        "participants": [
+          {
+            "name": "Emily Clarke",
+            "avatar_url": "https://randomuser.me/photos/1.jpg"
+          },
+          {
+            "name": "Nina Müller",
+            "avatar_url": "https://randomuser.me/photos/5.jpg"
+          },
+          {
+            "name": "Sofia Rossi",
+            "avatar_url": "https://randomuser.me/photos/6.jpg"
+          },
+          {
+            "name": "Elena Petrova",
+            "avatar_url": "https://randomuser.me/photos/21.jpg"
+          },
+          {
+            "name": "Lars Jensen",
+            "avatar_url": "https://randomuser.me/photos/22.jpg"
+          }
+        ],
+        "unfinished_tasks": 4,
+        "cover_image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        "id": "2",
+        "status": "Pending Approval",
+        "title": "Santorini Dream Escape",
+        "dates": {
+          "start": "16-01-2024",
+          "end": "20-01-2024"
+        },
+        "participants": [
+          {
+            "name": "Lucas Martinez",
+            "avatar_url": "https://randomuser.me/photos/2.jpg"
+          },
+          {
+            "name": "Chloe Dubois",
+            "avatar_url": "https://randomuser.me/photos/3.jpg"
+          },
+          {
+            "name": "Olivia Smith",
+            "avatar_url": "https://randomuser.me/photos/9.jpg"
+          },
+          {
+            "name": "Daniel Kim",
+            "avatar_url": "https://randomuser.me/photos/10.jpg"
+          }
+        ],
+        "unfinished_tasks": 4,
+        "cover_image": "https://images.unsplash.com/photo-1465156799763-2c087c332922?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        "id": "3",
+        "status": "Ready for travel",
+        "title": "Maldives Island Retreat",
+        "dates": {
+          "start": "16-01-2024",
+          "end": "20-01-2024"
+        },
+        "participants": [
+          {
+            "name": "Liam Wong",
+            "avatar_url": "https://randomuser.me/photos/4.jpg"
+          }
+        ],
+        "unfinished_tasks": 4,
+        "cover_image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        "id": "4",
+        "status": "Proposal Sent",
+        "title": "Paris Getaway",
+        "dates": {
+          "start": "16-01-2024",
+          "end": "20-01-2024"
+        },
+        "participants": [
+          {
+            "name": "Amélie Laurent",
+            "avatar_url": "https://randomuser.me/photos/7.jpg"
+          },
+          {
+            "name": "Mateo Alvarez",
+            "avatar_url": "https://randomuser.me/photos/8.jpg"
+          }
+        ],
+        "unfinished_tasks": 4,
+        "cover_image": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        "id": "5",
+        "status": "Pending Approval",
+        "title": "Venice Canal Experience",
+        "dates": {
+          "start": "16-01-2024",
+          "end": "20-01-2024"
+        },
+        "participants": [
+          {
+            "name": "Isabella Greco",
+            "avatar_url": "https://randomuser.me/photos/11.jpg"
+          },
+          {
+            "name": "David Johnson",
+            "avatar_url": "https://randomuser.me/photos/12.jpg"
+          },
+          {
+            "name": "Mei Chen",
+            "avatar_url": "https://randomuser.me/photos/13.jpg"
+          },
+          {
+            "name": "Hannah Becker",
+            "avatar_url": "https://randomuser.me/photos/14.jpg"
+          },
+          {
+            "name": "Akira Sato",
+            "avatar_url": "https://randomuser.me/photos/15.jpg"
+          }
+        ],
+        "unfinished_tasks": 4,
+        "cover_image": "https://images.unsplash.com/photo-1444065381814-865dc9da92c0?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        "id": "6",
+        "status": "Ready for travel",
+        "title": "Tokyo City Lights Tour",
+        "dates": {
+          "start": "16-01-2024",
+          "end": "20-01-2024"
+        },
+        "participants": [
+          {
+            "name": "Haruto Tanaka",
+            "avatar_url": "https://randomuser.me/photos/16.jpg"
+          },
+          {
+            "name": "Maria Ivanova",
+            "avatar_url": "https://randomuser.me/photos/17.jpg"
+          },
+          {
+            "name": "Lucas Brown",
+            "avatar_url": "https://randomuser.me/photos/18.jpg"
+          },
+          {
+            "name": "Saanvi Patel",
+            "avatar_url": "https://randomuser.me/photos/19.jpg"
+          },
+          {
+            "name": "William Wilson",
+            "avatar_url": "https://randomuser.me/photos/20.jpg"
+          }
+        ],
+        "unfinished_tasks": 4,
+        "cover_image": "https://images.unsplash.com/photo-1462129487128-340e6b021fd7?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        "id": "7",
+        "status": "Pending Approval",
+        "title": "New York Urban Adventure",
+        "dates": {
+          "start": "16-01-2024",
+          "end": "20-01-2024"
+        },
+        "participants": [
+          {
+            "name": "James Anderson",
+            "avatar_url": "https://randomuser.me/photos/23.jpg"
+          },
+          {
+            "name": "Sophia Lee",
+            "avatar_url": "https://randomuser.me/photos/24.jpg"
+          },
+          {
+            "name": "Noah Davis",
+            "avatar_url": "https://randomuser.me/photos/25.jpg"
+          }
+        ],
+        "unfinished_tasks": 4,
+        "cover_image": "https://images.unsplash.com/photo-1454023492550-5696f8ff10e1?auto=format&fit=crop&w=800&q=80"
+      }
+    ]
+  }

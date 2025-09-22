@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "302892470008",
+    "firebase_url": "https://mini-social-feed-app-48c46-default-rtdb.firebaseio.com",
+    "project_id": "mini-social-feed-app-48c46",
+    "storage_bucket": "mini-social-feed-app-48c46.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:302892470008:android:80ee4f30a7f1f48453750d",
+        "android_client_info": {
+          "package_name": "com.mnemdev.minisocialfeedapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "302892470008-7eojp5eg1b2as0du47cjvprhpeb8sls8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCozM0PzUTGLa6oDM2oJ8mi-LXbc83avKg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "302892470008-7eojp5eg1b2as0du47cjvprhpeb8sls8.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "302892470008-382i8fp5n99lu57c193edd0tlgbndchh.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mnemdev.minisocialfeedapp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

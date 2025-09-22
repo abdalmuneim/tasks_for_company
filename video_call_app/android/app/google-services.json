@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "576886383135",
+    "firebase_url": "https://yallachat-4f063-default-rtdb.firebaseio.com",
+    "project_id": "yallachat-4f063",
+    "storage_bucket": "yallachat-4f063.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:576886383135:android:fcc0580ae0e17fd273ab2a",
+        "android_client_info": {
+          "package_name": "com.example.video_call_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJGReiT1YjYS0npMuRMV_ucDun-R2TvBU"
+        },
+        {
+          "current_key": "AIzaSyBmiAVRBoICLt7Au_TzV4-SyNCVPCStjI8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:576886383135:android:a5c86c697850472a73ab2a",
+        "android_client_info": {
+          "package_name": "com.share.birrukum"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJGReiT1YjYS0npMuRMV_ucDun-R2TvBU"
+        },
+        {
+          "current_key": "AIzaSyBmiAVRBoICLt7Au_TzV4-SyNCVPCStjI8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:576886383135:android:d2fcde82ec10371e73ab2a",
+        "android_client_info": {
+          "package_name": "com.yallachat.user"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJGReiT1YjYS0npMuRMV_ucDun-R2TvBU"
+        },
+        {
+          "current_key": "AIzaSyBmiAVRBoICLt7Au_TzV4-SyNCVPCStjI8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:576886383135:android:1d525287c4999d2973ab2a",
+        "android_client_info": {
+          "package_name": "tkafol.share.sa"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJGReiT1YjYS0npMuRMV_ucDun-R2TvBU"
+        },
+        {
+          "current_key": "AIzaSyBmiAVRBoICLt7Au_TzV4-SyNCVPCStjI8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

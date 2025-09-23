@@ -83,14 +83,7 @@ class _SignupScreenState extends State<SignupScreen> {
                     textAlign: TextAlign.center,
                     style: theme.textTheme.headlineMedium,
                   ),
-                  kSizedBoxH8,
-                  Text(
-                    'Join our community and start sharing!',
-                    textAlign: TextAlign.center,
-                    style: theme.textTheme.bodyLarge?.copyWith(
-                      color: theme.colorScheme.onSurface.withValues(alpha: 0.7),
-                    ),
-                  ),
+
                   const SizedBox(height: 40),
 
                   // Display Name Field

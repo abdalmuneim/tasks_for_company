@@ -6,6 +6,7 @@ import 'firebase_options.dart';
 import 'providers/auth_provider.dart';
 import 'providers/create_post_provider.dart';
 import 'providers/feed_provider.dart';
+import 'providers/profile_provider.dart';
 import 'providers/theme_provider.dart';
 import 'screens/auth/auth_wrapper.dart';
 
@@ -33,6 +34,7 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => AuthProvider()),
         ChangeNotifierProvider(create: (_) => FeedProvider()),
         ChangeNotifierProvider(create: (_) => CreatePostProvider()),
+        ChangeNotifierProvider(create: (_) => ProfileProvider()),
       ],
       child: Consumer<ThemeProvider>(
         builder: (context, themeProvider, child) {

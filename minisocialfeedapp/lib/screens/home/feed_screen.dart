@@ -105,7 +105,13 @@ class _FeedScreenState extends State<FeedScreen> {
             return _buildSuggestedUsersSection(feedProvider);
           }
           final post = feedProvider.posts[index - 1];
-          return PostCard(post: post);
+          final isLastItem = index == feedProvider.posts.length;
+          return Column(
+            children: [
+              PostCard(post: post),
+              if (isLastItem) const SizedBox(height: 64),
+            ],
+          );
         },
       ),
     );

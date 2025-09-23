@@ -350,7 +350,7 @@ class PostCard extends StatelessWidget {
                   children: [
                     CircleAvatar(
                       radius: 16,
-                      backgroundColor: theme.primaryColor,
+                      backgroundColor: kSecondaryColor,
                       child: Text(
                         authProvider.user?.displayName?.isNotEmpty == true
                             ? authProvider.user!.displayName![0].toUpperCase()
@@ -384,7 +384,7 @@ class PostCard extends StatelessWidget {
                     ),
                     const SizedBox(width: 8),
                     IconButton(
-                      icon: Icon(Icons.send, color: theme.primaryColor),
+                      icon: Icon(Icons.send, color: kSecondaryColor),
                       onPressed: () {
                         final content = commentController.text.trim();
                         if (content.isNotEmpty && authProvider.user != null) {

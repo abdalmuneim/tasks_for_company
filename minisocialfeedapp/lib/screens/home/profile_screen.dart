@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:minisocialfeedapp/utils/constants.dart';
 import 'package:provider/provider.dart';
 import '../../providers/theme_provider.dart';
 import '../../providers/auth_provider.dart';
@@ -17,7 +18,7 @@ class ProfileScreen extends StatelessWidget {
         elevation: 0,
         automaticallyImplyLeading: false,
       ),
-      body: Padding(
+      body: SingleChildScrollView(
         padding: const EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -327,6 +328,128 @@ class ProfileScreen extends StatelessWidget {
                 );
               },
             ),
+
+            const SizedBox(height: 24),
+
+            // Account Section
+            Text(
+              'Account',
+              style: theme.textTheme.titleMedium?.copyWith(
+                fontWeight: FontWeight.bold,
+                color: theme.colorScheme.primary,
+              ),
+            ),
+            const SizedBox(height: 16),
+
+            // Logout Button
+            Consumer<AuthProvider>(
+              builder: (context, authProvider, child) {
+                return Card(
+                  elevation: 2,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(16),
+                  ),
+                  child: InkWell(
+                    onTap: authProvider.isLoading
+                        ? null
+                        : () async {
+                            // Show confirmation dialog
+                            final shouldLogout = await showDialog<bool>(
+                              context: context,
+                              builder: (context) => AlertDialog(
+                                title: const Text('Sign Out'),
+                                content: const Text(
+                                  'Are you sure you want to sign out?',
+                                ),
+                                actions: [
+                                  TextButton(
+                                    onPressed: () =>
+                                        Navigator.of(context).pop(false),
+                                    child: const Text('Cancel'),
+                                  ),
+                                  TextButton(
+                                    onPressed: () =>
+                                        Navigator.of(context).pop(true),
+                                    child: Text(
+                                      'Sign Out',
+                                      style: TextStyle(
+                                        color: theme.colorScheme.error,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            );
+
+                            if (shouldLogout == true) {
+                              // Add haptic feedback
+                              HapticFeedback.lightImpact();
+                              await authProvider.signOut();
+                            }
+                          },
+                    borderRadius: BorderRadius.circular(16),
+                    child: Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Row(
+                        children: [
+                          // Logout Icon
+                          Icon(
+                            Icons.logout_rounded,
+                            size: 28,
+                            color: theme.colorScheme.error,
+                          ),
+                          const SizedBox(width: 16),
+
+                          // Logout Title and Description
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  'Sign Out',
+                                  style: theme.textTheme.titleMedium?.copyWith(
+                                    fontWeight: FontWeight.w600,
+                                    color: theme.colorScheme.error,
+                                  ),
+                                ),
+                                const SizedBox(height: 4),
+                                Text(
+                                  'Sign out of your account',
+                                  style: theme.textTheme.bodyMedium?.copyWith(
+                                    color: theme.colorScheme.onSurface
+                                        .withOpacity(0.6),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+
+                          // Loading indicator or arrow
+                          if (authProvider.isLoading)
+                            SizedBox(
+                              width: 20,
+                              height: 20,
+                              child: CircularProgressIndicator(
+                                strokeWidth: 2,
+                                valueColor: AlwaysStoppedAnimation<Color>(
+                                  theme.colorScheme.error,
+                                ),
+                              ),
+                            )
+                          else
+                            Icon(
+                              Icons.chevron_right,
+                              color: theme.colorScheme.onSurface.withOpacity(
+                                0.4,
+                              ),
+                            ),
+                        ],
+                      ),
+                    ),
+                  ),
+                );
+              },
+            ),
           ],
         ),
       ),
@@ -351,7 +474,7 @@ class ProfileScreen extends StatelessWidget {
         ),
         child: Column(
           children: [
-            Icon(icon, size: 20, color: theme.colorScheme.primary),
+            Icon(icon, size: 20, color: kSecondaryColor),
             const SizedBox(height: 4),
             Text(
               value,

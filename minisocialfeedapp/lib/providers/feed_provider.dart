@@ -39,9 +39,10 @@ class FeedProvider with ChangeNotifier {
       _suggestedUsers = await _apiService.fetchSuggestedUsers();
       _postsSubscription?.cancel();
       _postsSubscription = _firestoreService.getPosts().listen(
-        (posts) {
+        (posts) async {
           _posts = posts;
           _isLoading = false;
+          await _fetchCommentsForAllPosts();
           notifyListeners();
         },
         onError: (error) {
@@ -55,6 +56,18 @@ class FeedProvider with ChangeNotifier {
       _isLoading = false;
       notifyListeners();
     }
+  }
+
+  Future<void> _fetchCommentsForAllPosts() async {
+    for (final post in _posts) {
+      try {
+        final comments = await _firestoreService.getComments(post.id).first;
+        _postComments[post.id] = comments;
+      } catch (e) {
+        _postComments[post.id] = [];
+      }
+    }
+    notifyListeners();
   }
 
   Future<void> toggleLike(String postId, String userId) async {
